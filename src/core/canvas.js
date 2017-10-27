@@ -180,6 +180,7 @@ exports.canvas = function() {
     canvas.sepia = wrap(sepia);
 
     // new filters methods
+    canvas.noiseAnimated = wrap(noiseAnimated);
     canvas.coloradjust = wrap(coloradjust);
     canvas.color = wrap(color);
     canvas.exposure = wrap(exposure);
