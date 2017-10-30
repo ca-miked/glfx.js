@@ -1,0 +1,22 @@
+{
+  "name": "ca-glfx",
+  "version": "0.0.1",
+  "description": "Added additional filters from the fantastic base glfx package",
+  "main": "glfx.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ca-miked@github.com/ca-miked/glfx.js.git"
+  },
+  "author": "Mike Dunlop <mike@conceptarts.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ca-miked/glfx.js/issues"
+  },
+  "homepage": "https://github.com/ca-miked/glfx.js#readme"
+}
