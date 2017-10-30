@@ -2312,3 +2312,4 @@ var Texture = (function() {
 
 return exports;
 })();
+"object"===typeof module?module.exports=fx:window.fx=fx;

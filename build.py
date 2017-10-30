@@ -15,6 +15,8 @@ header = '''/*
  */
 '''
 
+footer = '''"object"===typeof module?module.exports=fx:window.fx=fx;'''
+
 def sources():
     return [os.path.join(base, f) for base, folders, files in \
         os.walk(input_path) for f in files if f.endswith('.js')]
@@ -47,7 +49,7 @@ def build():
         data = open(temp2_path).read()
         os.remove(temp2_path)
         data = compress_glsl(data)
-    data = header + data
+    data = header + data + footer
     open(output_path, 'w').write(data)
     print 'built %s (%u lines)' % (output_path, len(data.split('\n')))
 
