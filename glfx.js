@@ -2001,6 +2001,8 @@ function texture(element) {
 function initialize(width, height) {
     var type = gl.UNSIGNED_BYTE;
 
+    gl.pixelStore(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
+
     // Go for floating point buffer textures if we can, it'll make the bokeh
     // filter look a lot better. Note that on Windows, ANGLE does not let you
     // render to a floating-point texture when linear filtering is enabled.
